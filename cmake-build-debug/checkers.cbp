@@ -79,28 +79,19 @@
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/checkers.c">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/checkers.h">
+		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamelogic.h">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamestate.c">
 			<Option target="checkers"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamestate.h">
-			<Option target="checkers"/>
-		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/input.c">
-			<Option target="checkers"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/input.h">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/main.c">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/player.c">
-			<Option target="checkers"/>
-		</Unit>
-		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/player.h">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/renderer.h">

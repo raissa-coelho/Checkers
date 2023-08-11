@@ -11,7 +11,7 @@ find_package(GLUT REQUIRED)
 find_package(OpenMP REQUIRED)
 
 # Add the executable target
-add_executable(checkers main.c renderer.h renderer.h checkers.h checkers.h gamestate.h gamestate.h player.h player.h input.h checkers.c checkers.c player.c input.c gamestate.c gamestate.c)
+add_executable(checkers main.c renderer.h renderer.h checkers.c checkers.c player.c input.c gamestate.c gamestate.c gamelogic.h checkers.c)
 
 # Link the executable with OpenGL/GLUT libraries and OpenMP
 target_link_libraries(checkers PRIVATE ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} OpenMP::OpenMP_C)

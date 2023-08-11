@@ -2,9 +2,14 @@
 // Created by Matheus S. Menezes on 10/08/2023.
 //
 
-#include "gamestate.h"
+#include "gamelogic.h"
 
 void initializeGameState(GameState* state, Player initial_player) {
+    state->board = (Piece**) malloc(BOARD_SIZE*sizeof (Piece*));
+    for(int i  = 0; i < BOARD_SIZE; i++){
+        state->board[i] = (Piece*) malloc(BOARD_SIZE*sizeof (Piece));
+    }
+
     // Clear the board and set initial positions
     for (int i = 0; i < BOARD_SIZE; i++) {
         for (int j = 0; j < BOARD_SIZE; j++) {

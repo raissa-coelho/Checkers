@@ -2,7 +2,7 @@
 // Created by Matheus S. Menezes on 10/08/2023.
 //
 
-#include "input.h"
+#include "gamelogic.h"
 
 MoveInput getAIMoveInput(const GameState* state, Player player) {
     MoveInput move;

@@ -2,7 +2,7 @@
 // Created by Matheus S. Menezes on 10/08/2023.
 //
 
-#include "checkers.h"
+#include "gamelogic.h"
 
 
 void printBoard(Piece **board) {
@@ -83,7 +83,6 @@ Player checkWinner(const GameState* state) {
     int blackCount = 0;
     int whiteCount = 0;
 
-#pragma omp parallel for reduction(+:blackCount, whiteCount)
     for (int i = 0; i < BOARD_SIZE; i++) {
         for (int j = 0; j < BOARD_SIZE; j++) {
             if (state->board[i][j] == BLACK_PIECE || state->board[i][j] == BLACK_KING) {

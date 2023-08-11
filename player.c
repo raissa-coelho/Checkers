@@ -2,7 +2,7 @@
 // Created by Matheus S. Menezes on 10/08/2023.
 //
 
-#include "player.h"
+#include "gamelogic.h"
 
 MoveType checkMoveType(const GameState* state, int srcRow, int srcCol, int destRow, int destCol) {
     // Determine move type based on the move's validity
