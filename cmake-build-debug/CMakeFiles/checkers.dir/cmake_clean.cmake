@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/checkers.dir/checkers.c.o"
   "CMakeFiles/checkers.dir/checkers.c.o.d"
+  "CMakeFiles/checkers.dir/gamestate.c.o"
+  "CMakeFiles/checkers.dir/gamestate.c.o.d"
+  "CMakeFiles/checkers.dir/input.c.o"
+  "CMakeFiles/checkers.dir/input.c.o.d"
   "CMakeFiles/checkers.dir/main.c.o"
   "CMakeFiles/checkers.dir/main.c.o.d"
   "CMakeFiles/checkers.dir/player.c.o"

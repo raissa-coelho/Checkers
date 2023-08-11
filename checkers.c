@@ -79,4 +79,73 @@ void makeMove(GameState* state, int srcRow, int srcCol, int destRow, int destCol
     }
 }
 
+Player checkWinner(const GameState* state) {
+    int blackCount = 0;
+    int whiteCount = 0;
+
+#pragma omp parallel for reduction(+:blackCount, whiteCount)
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        for (int j = 0; j < BOARD_SIZE; j++) {
+            if (state->board[i][j] == BLACK_PIECE || state->board[i][j] == BLACK_KING) {
+                blackCount++;
+            } else if (state->board[i][j] == WHITE_PIECE || state->board[i][j] == WHITE_KING) {
+                whiteCount++;
+            }
+        }
+    }
+
+    if (blackCount == 0) {
+        return WHITE_PLAYER; // White player wins
+    } else if (whiteCount == 0) {
+        return BLACK_PLAYER; // Black player wins
+    }
+
+    return TEAPOT; // No winner yet
+}
+
+
+MoveResult isValidMove(const GameState* state, Player player, int srcRow, int srcCol, int destRow, int destCol) {
+    // Check if the source and destination are within bounds
+    if (srcRow < 0 || srcRow >= BOARD_SIZE || srcCol < 0 || srcCol >= BOARD_SIZE ||
+        destRow < 0 || destRow >= BOARD_SIZE || destCol < 0 || destCol >= BOARD_SIZE) {
+        return INVALID_MOVE;
+    }
+
+    // Check if the destination is a valid empty tile
+    if (state->board[destRow][destCol] != EMPTY) {
+        return INVALID_MOVE;
+    }
+
+    // Check if the move is diagonal (abs value of row and col difference should be equal)
+    int rowDiff = abs(destRow - srcRow);
+    int colDiff = abs(destCol - srcCol);
+    if (rowDiff != colDiff) {
+        return INVALID_MOVE;
+    }
+
+    // Check if the piece being moved belongs to the current player
+    Piece playerPiece = (player == BLACK_PLAYER) ? BLACK_PIECE : WHITE_PIECE;
+    if (state->board[srcRow][srcCol] != playerPiece) {
+        return INVALID_MOVE;
+    }
+
+    // Check if the move direction is correct based on player
+    if (rowDiff != 1 && rowDiff != 2) {
+        return INVALID_MOVE;
+    }
+    if (rowDiff == 2 && colDiff == 2) {
+        // Capture move, check if there's an opponent's piece in between
+        int midRow = (srcRow + destRow) / 2;
+        int midCol = (srcCol + destCol) / 2;
+        Piece opponentPiece = (player == BLACK_PLAYER) ? WHITE_PIECE : BLACK_PIECE;
+        if (state->board[midRow][midCol] != opponentPiece) {
+            return INVALID_MOVE;
+        }
+    }
+
+    return VALID_MOVE;
+}
+
+
+
 

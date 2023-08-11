@@ -82,7 +82,13 @@
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/checkers.h">
 			<Option target="checkers"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamestate.c">
+			<Option target="checkers"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamestate.h">
+			<Option target="checkers"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/input.c">
 			<Option target="checkers"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/input.h">

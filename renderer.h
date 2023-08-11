@@ -14,10 +14,12 @@ typedef struct {
     float b;
 } Color;
 
-Color colorLookup[3] = {
-        {0.0f, 0.0f, 0.0f}, // Black
-        {1.0f, 1.0f, 1.0f}, // White
-        {0.0f, 1.0f, 0.0f}  // Green
+Color colorLookup[5] = {
+        {0.0f, 0.0f, 0.0f},  // Black
+        {1.0f, 1.0f, 1.0f},  // White
+        {0.0f, 1.0f, 0.0f},  // Green
+        {1.0f, 0.0f, 0.0f},  // Red
+        {0.0f, 0.0f, 1.0f},  // Blue
 };
 
 

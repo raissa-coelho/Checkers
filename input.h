@@ -15,6 +15,9 @@ typedef struct {
 } MoveInput;
 
 MoveInput getPlayerMoveInput(const GameState* state, Player player);
-// Other input functions
+MoveInput getAIMoveInput(const GameState* state, Player player);
+MoveInput getNetworkMoveInput(const GameState* state, Player player);
+MoveInput getGraphicalMoveInput(const GameState* state, Player player);
+// Other input functions for different modes
 
 #endif // INPUT_H

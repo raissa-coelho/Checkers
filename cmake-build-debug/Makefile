@@ -153,6 +153,54 @@ checkers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/checkers.c.s
 .PHONY : checkers.c.s
 
+gamestate.o: gamestate.c.o
+.PHONY : gamestate.o
+
+# target to build an object file
+gamestate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/gamestate.c.o
+.PHONY : gamestate.c.o
+
+gamestate.i: gamestate.c.i
+.PHONY : gamestate.i
+
+# target to preprocess a source file
+gamestate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/gamestate.c.i
+.PHONY : gamestate.c.i
+
+gamestate.s: gamestate.c.s
+.PHONY : gamestate.s
+
+# target to generate assembly for a file
+gamestate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/gamestate.c.s
+.PHONY : gamestate.c.s
+
+input.o: input.c.o
+.PHONY : input.o
+
+# target to build an object file
+input.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/input.c.o
+.PHONY : input.c.o
+
+input.i: input.c.i
+.PHONY : input.i
+
+# target to preprocess a source file
+input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/input.c.i
+.PHONY : input.c.i
+
+input.s: input.c.s
+.PHONY : input.s
+
+# target to generate assembly for a file
+input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/checkers.dir/build.make CMakeFiles/checkers.dir/input.c.s
+.PHONY : input.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -213,6 +261,12 @@ help:
 	@echo "... checkers.o"
 	@echo "... checkers.i"
 	@echo "... checkers.s"
+	@echo "... gamestate.o"
+	@echo "... gamestate.i"
+	@echo "... gamestate.s"
+	@echo "... input.o"
+	@echo "... input.i"
+	@echo "... input.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

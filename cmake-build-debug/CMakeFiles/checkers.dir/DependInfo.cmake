@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/checkers.c" "CMakeFiles/checkers.dir/checkers.c.o" "gcc" "CMakeFiles/checkers.dir/checkers.c.o.d"
+  "/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/gamestate.c" "CMakeFiles/checkers.dir/gamestate.c.o" "gcc" "CMakeFiles/checkers.dir/gamestate.c.o.d"
+  "/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/input.c" "CMakeFiles/checkers.dir/input.c.o" "gcc" "CMakeFiles/checkers.dir/input.c.o.d"
   "/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/main.c" "CMakeFiles/checkers.dir/main.c.o" "gcc" "CMakeFiles/checkers.dir/main.c.o.d"
   "/mnt/c/Users/Matheus S. Menezes/Documents/Projetos/checkers/player.c" "CMakeFiles/checkers.dir/player.c.o" "gcc" "CMakeFiles/checkers.dir/player.c.o.d"
   )
